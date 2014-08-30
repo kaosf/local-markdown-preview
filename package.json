@@ -1,0 +1,24 @@
+{
+  "name": "local-markdown-preview",
+  "version": "1.0.0",
+  "description": "Local Markdown preview",
+  "scripts": {
+    "install": "cp sample.md doc.md",
+    "start": "./node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaosf/local-markdown-preview"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "dependencies": {
+    "http-server": "0.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kaosf/local-markdown-preview/issues"
+  },
+  "author": "ka",
+  "license": "MIT"
+}
