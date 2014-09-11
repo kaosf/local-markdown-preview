@@ -5,14 +5,16 @@
     <link rel="stylesheet" href="bower_components/github-markdown-css/github-markdown.css">
     <title>Local Markdown Preview</title>
   </head>
-  <body class="markdown-body">
-    <p>Prepare doc.md in the same directory of this file.</p>
+  <body>
+    <div class="markdown-body">
+      <p>Prepare doc.md in the same directory of this file.</p>
+    </div>
     <script src="bower_components/marked/lib/marked.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script>
       $.get('/doc.md', {}, function (data) {
-        $('body p').remove()
-        $('body').append(marked(data))
+        $('body div p').remove()
+        $('body div').append(marked(data))
       })
     </script>
   </body>
